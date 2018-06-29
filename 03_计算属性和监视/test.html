@@ -17,16 +17,42 @@
   计算属性存在缓存, 多次读取只执行一次getter计算
 -->
 <div id="demo">
-  姓: <input type="text" placeholder="First Name"><br>
-  名: <input type="text" placeholder="Last Name"><br>
-  姓名1(单向): <input type="text" placeholder="Full Name1"><br>
+  姓: <input type="text" placeholder="First Name" v-model="firstName"><br>
+  名: <input type="text" placeholder="Last Name" v-model="lastName"><br>
+  姓名1(单向): <input type="text" placeholder="Full Name1" ><br>
   姓名2(单向): <input type="text" placeholder="Full Name2"><br>
   姓名3(双向): <input type="text" placeholder="Full Name3"><br>
 </div>
 
 <script type="text/javascript" src="../js/vue.js"></script>
 <script type="text/javascript">
+    const  p={
+        firstName:'A',
+        lastName:'B'
+    }
+    /*p.fullName=p.firstName+'-'+p.lastName
+    console.log(p.fullName);*/
+    
+    Object.defineProperty(p,'fullName',{
+        get(){
+            console.log('get()');
+            return this.firstName+'-'+this.lastName
+        },
+        set(value){
+            console.log('set()',value);
+            const names=value.split('-')
+//            console.log('set()');
+            this.lastName=names[1]
+            this.firstName=names[0]
+        }
+    })
+    console.log(p.fullName);
+    p.firstName='K'
+    p.lastName='p'
+    console.log(p.fullName);
 
+    p.fullName='w-t'
+    console.log(p.firstName,p.lastName);
 </script>
 </body>
 </html>
