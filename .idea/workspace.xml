@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="796f3987-0e68-4772-bbfe-a8d9733ae070" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/03_计算属性和监视/test1.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/01_HelloWorld/test.html" afterPath="$PROJECT_DIR$/01_HelloWorld/test.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/03_计算属性和监视/test.html" afterPath="$PROJECT_DIR$/03_计算属性和监视/test.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/04_class与style绑定/test.html" afterPath="$PROJECT_DIR$/04_class与style绑定/test.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/05_条件渲染/test.html" afterPath="$PROJECT_DIR$/05_条件渲染/test.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/06_列表渲染/test.html" afterPath="$PROJECT_DIR$/06_列表渲染/test.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/06_列表渲染/test2.html" afterPath="$PROJECT_DIR$/06_列表渲染/test2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/07_事件处理/test.html" afterPath="$PROJECT_DIR$/07_事件处理/test.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/08_表单输入绑定/test.html" afterPath="$PROJECT_DIR$/08_表单输入绑定/test.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/07_事件处理/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-777">
-              <caret line="35" column="35" lean-forward="false" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
+            <state relative-caret-position="483">
+              <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -39,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/08_表单输入绑定/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1080">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="707">
+              <caret line="76" column="6" lean-forward="true" selection-start-line="76" selection-start-column="6" selection-end-line="76" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -65,6 +57,7 @@
         <option value="$PROJECT_DIR$/03_计算属性和监视/test.html" />
         <option value="$PROJECT_DIR$/06_列表渲染/test.html" />
         <option value="$PROJECT_DIR$/06_列表渲染/test2.html" />
+        <option value="$PROJECT_DIR$/08_表单输入绑定/test.html" />
         <option value="$PROJECT_DIR$/07_事件处理/test.html" />
       </list>
     </option>
@@ -110,6 +103,11 @@
             <path>
               <item name="VueTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="VueTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VueTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VueTest" type="462c0819:PsiDirectoryNode" />
+              <item name="07_事件处理" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="VueTest" type="b2602c69:ProjectViewProjectNode" />
@@ -161,12 +159,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1530238594768</updated>
-      <workItem from="1530238596394" duration="20711000" />
+      <workItem from="1530238596394" duration="24559000" />
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1530274230669</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1530274230669</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20711000" />
+    <option name="totallyTimeSpent" value="24559000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -196,6 +202,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -276,22 +286,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/08_表单输入绑定/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="707">
+          <caret line="76" column="6" lean-forward="true" selection-start-line="76" selection-start-column="6" selection-end-line="76" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/07_事件处理/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-777">
-          <caret line="35" column="35" lean-forward="false" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
+        <state relative-caret-position="483">
+          <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/08_表单输入绑定/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1080">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
