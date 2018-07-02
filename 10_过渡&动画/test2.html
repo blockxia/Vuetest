@@ -3,13 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <title>10_过渡&动画2</title>
+    <style>
+        .am-enter-active{
+            animation: li 1s;
+        }
+        .am-leave-active{
+            animation: li 0.5s reverse;
+        }
+        @keyframes li {
+            0%{transform: scale(0)}
+            50%{transform: scale(1.5)}
+            100%{transform: scale(1)}
 
+        }
+    </style>
 </head>
 <body>
 
+<div id="app">
+    <button @click="show=!show">show</button>
+    <br>
+    <transition name="am">
+    <p v-show="show" style="display: inline-block"> 你好的</p>
+    </transition>
+</div>
+
 <script type="text/javascript" src="../js/vue.js"></script>
 <script>
-
+  new Vue({
+      el:'#app',
+      data(){
+          return {
+              show:true
+          }
+      }
+  })
 </script>
 </body>
 </html>

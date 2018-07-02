@@ -3,6 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <title>10_过渡&动画1</title>
+    <style>
+        .am-enter-active,.am-leave-active{
+            transition: opacity 1s;
+        }
+        .am-enter,.am-leave-to{
+            opacity: 0;
+        }
+
+        .yyy-enter-active{
+            transition: opacity 1s,transform 1s;
+        }
+        .yyy-leave-active{
+            transition: all 3s;
+        }
+        .yyy-enter,.yyy-leave-to{
+            opacity: 0;
+            transform: translateX(20px);
+        }
+    </style>
 </head>
 <body>
 <!--
@@ -19,11 +38,43 @@
   xxx-leave-active: 指定隐藏的transition
   xxx-enter: 指定隐藏时的样式
 -->
+<div id="app">
+    <button @click="show=!show">按钮</button>
+    <transition name="am">
+        <p v-if="show">hello hhhh</p>
+    </transition>
+</div>
+
+
+<div id="app1">
+    <button @click="show=!show">toggle</button>
+    <transition name="yyy">
+        <p v-if="show">hello hhhh</p>
+    </transition>
+</div>
+
 
 
 <script type="text/javascript" src="../js/vue.js"></script>
 <script type="text/javascript">
+    new Vue({
+        el:'#app',
+        data:{
+          show:true
+        }
 
+    })
+
+
+
+
+    new Vue({
+        el:'#app1',
+        data:{
+            show:true
+        }
+
+    })
 </script>
 </body>
 </html>

@@ -27,10 +27,37 @@
   1. 功能类型于v-text, 但转换为全大写
   2. 功能类型于v-text, 但转换为全小写
 -->
-
+<div id="test">
+    <p v-upper-text="msg"></p>
+    <p v-lower-text="msg"></p>
+</div>
+<div id="test1">
+    <p v-upper-text="msg"></p>
+    <p v-lower-text="msg"></p>
+</div>
 <script type="text/javascript" src="../js/vue.js"></script>
 <script type="text/javascript">
-
+Vue.directive('upper-text',function (el,binding) {
+    console.log(binding);
+    el.textContent=binding.value.toUpperCase()
+})
+    new Vue({
+        el:'#test',
+        data:{
+          msg:'dddHHHddd',
+        },
+        directives:{
+            'lower-text'(el,binding) {
+                el.textContent=binding.value.toLowerCase()
+            }
+        }
+    })
+    new Vue({
+        el:'#test1',
+        data:{
+            msg:'huuuhGGGGGGGG'
+        }
+    })
 </script>
 </body>
 </html>
